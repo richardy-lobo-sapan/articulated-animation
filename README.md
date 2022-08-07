@@ -4,6 +4,17 @@ This repository contains the source code for the CVPR'2021 paper [Motion Represe
 
 For more qualitiative examples visit our [project page](https://snap-research.github.io/articulated-animation/).
 
+
+## Explanation 
+
+This project animates faces from videos and images. Here the model takes a driving video and maps its motion over static images to give a realistic appearance. The model loading uses Python, and the source code is available in the repository. 
+
+This example shows a method of animating static source images through unsupervised region detection. The model uses a driving video and maps its motion over still images to give a realistic appearance.
+
+First Order Motion Model (FOMM) consists of two main parts: motion estimation and image generation. Motion estimation contains coarse motion estimation, which is modeled as sparse motions between separate object parts, and dense motion, producing an optical flow along the confidence map for the entire image.
+
+
+
 ## Example animation
 
 Here is an example of several images produced by our method. In the first column the driving video is shown. For the remaining columns the top image is animated by using motions extracted from the driving. 
